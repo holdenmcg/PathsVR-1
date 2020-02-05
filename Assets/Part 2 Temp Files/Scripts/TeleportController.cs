@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class TeleportController : MonoBehaviour {
 
     [Range(1f, 1000f)]
     public float maxRaycastDistance = 100f;
