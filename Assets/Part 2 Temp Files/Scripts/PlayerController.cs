@@ -35,10 +35,7 @@ public class PlayerController : MonoBehaviour {
         if (isTeleporting) {
             return;
         }
-        if (Input.touchCount > 0) {
-            touch = Input.GetTouch(0);
-        }
-        if (Input.GetMouseButton(0) || touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary) {
+        if (Input.GetMouseButton(0)) {
             ShowTeleportLocation();
             DrawCurve();
         } else {
