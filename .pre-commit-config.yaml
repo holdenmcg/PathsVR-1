@@ -1,0 +1,9 @@
+repos:
+  - repo: https://github.com/returntocorp/semgrep # HTTPS
+    rev: "v0.85.0"
+    hooks:
+      - id: semgrep
+        name: Semgrep Python
+        types: [python]
+        exclude: "^semgrep/tests/.+$|^scripts/.+$|^semgrep/setup.py$"
+        args: ["--config", "https://semgrep.dev/p/python", "--error"]
